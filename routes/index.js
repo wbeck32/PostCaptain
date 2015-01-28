@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var fs = require('fs');
+var config = require('../config.json');
 var __dirname = './public/projects/';
 var fText = [];
 var fileNames = [];
@@ -18,7 +19,7 @@ var interator = function(index){
 		}
 		else{
 			router.get('/home', function(req,res,next){ 
-				res.render('home', { title: 'These projects are awesome', content: fText.join('')});
+				res.render('home', {content: fText.join('')});
 			});
 			
 		}
@@ -40,9 +41,10 @@ var fileTrawler = function(){
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'I am awesome.' });
+	fileTrawler();
+  res.render('index', { title: config.locals.title, bodytitle: config.locals.name, description: config.locals.description, owner: config.locals.owner, });
 });
-fileTrawler();
+
 
 
 module.exports = router;
