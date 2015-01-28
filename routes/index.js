@@ -18,8 +18,8 @@ var interator = function(index){
 			fileReader(index,__dirname+fileNames[index]);
 		}
 		else{
-			router.get('/home', function(req,res,next){ 
-				res.render('home', {content: fText.join('')});
+			router.get('/repo', function(req,res,next){ 
+				res.render('repo', {content: fText.join('')});
 			});
 			
 		}
@@ -42,7 +42,7 @@ var fileTrawler = function(){
 /* GET home page. */
 router.get('/', function(req, res, next) {
 	fileTrawler();
-  res.render('index', { title: config.locals.title, bodytitle: config.locals.name, description: config.locals.description, owner: config.locals.owner, });
+  res.render('index', { title: config.locals.title, bodytitle: config.locals.name, description: config.locals.description, owner: config.locals.owner });
 });
 
 
