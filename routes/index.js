@@ -12,18 +12,19 @@ var fileReader = function (index, file) {
 		index++;
 		interator(index);
 	});
-};
+}
 
-var interator = function(index){
-	if (index < fileNames.length) {	
+var interator = function(index){			
+	if (index < fileNames.length) {			
 		fileReader(index,__dirname+fileNames[index]);
 	}
-	else{
-        router.get('/home', function(req,res,next){ 
-			res.render('home', { content: fText.join('')});
+	else {
+		router.get('/repo', function(req,res,next){ 
+			res.render('repo', {content: fText.join('')});
 		});
 	}
-};
+
+}
 
 var fileTrawler = function(){
 	fs.readdir(__dirname, function(err,files) {		
@@ -36,12 +37,12 @@ var fileTrawler = function(){
 			fileReader(index, __dirname+fileNames[index]);
 		}		
 	});
-};
+}
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
 	fileTrawler();
-  	res.render('index', { title: config.locals.name, desc: config.locals.description });
+	res.render('index', { title: config.locals.title, bodytitle: config.locals.name, description: config.locals.description, owner: config.locals.owner });
 });
 
 
