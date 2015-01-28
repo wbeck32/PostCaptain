@@ -1,9 +1,11 @@
 {
   "locals": {
-    "url": "http://localhost:8080",
-    "name": "The Wintersmith's blog",
-    "owner": "Someone",
-    "description": "Ramblings of an immor(t)al demigod"
+    "url": "http://localhost:3000",
+    "title": "*Put the title of your home page here*",
+    "name": "*Put Your Blog Name Here*",
+    "owner": "*Put Your Name Here*",
+    "description": "*Put your Subtitle Here*",
+    "poweredby": "PostCaptain"
   },
   "plugins": [
     "./plugins/paginator.coffee"
