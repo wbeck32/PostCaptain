@@ -1,5 +1,5 @@
 {
-  "name": "wbSSG",
+  "name": "PostCaptain",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -13,5 +13,17 @@
     "jade": "~1.9.1",
     "morgan": "~1.5.1",
     "serve-favicon": "~2.2.0"
-  }
+  },
+  "description": "Static site generator node module",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wbeck32/PostCaptain.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wbeck32/PostCaptain/issues"
+  },
+  "homepage": "https://github.com/wbeck32/PostCaptain"
 }

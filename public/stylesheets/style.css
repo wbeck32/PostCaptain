@@ -10,6 +10,15 @@ a {
 p {
 
 }
+/* this is the css for individual entries*/
+.projectbox {
+	font-size: 12px;
+	
+}
+
+.projectbox#title {
+
+}
 
 .header {
 	font-size:18px;
