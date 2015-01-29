@@ -2,7 +2,7 @@ var copy = require('directory-copy');
 
 copy(
    { src: './public'
-   , dest: '../public'
+   , dest: '../../public'
    , excludes: [/^\./]
    }
   , function () {
