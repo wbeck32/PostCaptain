@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "install": "node ./node_modules/PostCaptain/bin/copy.js"
+    "install": "node bin/copy.js"
   },
   "dependencies": {
     "body-parser": "~1.10.2",
