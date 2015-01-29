@@ -46,6 +46,6 @@ Write separate posts into HTML (or Markdown) files that you put into the project
 
 You can add your own stylesheets and javascript files to the various directories in the public directory. You'll need to create a link to your new files in layout.jade. Alternately, you can edit the existing style.css and repo.js without having to change the jade file.
 
-To change the look of the main body of the page (anything besides the content between the <head\> tags), edit postcaptain.html.
+To change the look of the main body of the page (anything besides the content between the &lt;head&gt; tags), edit postcaptain.html.
 
 To change the look of the posts, edit the repo.jade template.
