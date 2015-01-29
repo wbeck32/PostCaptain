@@ -4,20 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var copy = require('directory-copy');
-console.log(__dirname);
 
-copy(
-   { src: './public'
-   , dest: '../../public'
-   , excludes: [/^\./]
-   }
-  , function () {
-   console.log('done!')
-})
-.on('log', function (ms, level){
-   console.log(level + ': ' + ms)
-}) 
 
 var routes = require('./routes/index');
 
