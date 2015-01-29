@@ -1,6 +1,6 @@
 {
   "locals": {
-    "url": "http://localhost:3000",
+    "url": "http://localhost:3030",
     "title": "*Put the title of your home page here*",
     "name": "*Put Your Blog Name Here*",
     "owner": "*Put Your Name Here*",
