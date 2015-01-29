@@ -1,7 +1,7 @@
 var copy = require('directory-copy');
 
 copy(
-   { src: '/node_modules/PostCaptain/public'
+   { src: './node_modules/PostCaptain/public'
    , dest: './public'
    , excludes: [/^\./]
    }
