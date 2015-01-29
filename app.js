@@ -5,11 +5,11 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var copy = require('directory-copy');
-
+console.log(__dirname);
 
 copy(
-   { src: __dirname+'/PostCaptain/public'
-   , dest: __dirname
+   { src: './public'
+   , dest: '../../public'
    , excludes: [/^\./]
    }
   , function () {
