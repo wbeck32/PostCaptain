@@ -23,17 +23,6 @@ var routes = require('./routes/index');
 
 var app = express();
 
-copy(
-    { src: __dirname+'/PostCaptain/public'
-    , dest: __dirname
-    , excludes: [/^\./]
-    }
-   , function () {
-    console.log('done!')
-})
-.on('log', function (ms, level){
-    console.log(leve + ': ' + msg)
-})
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
