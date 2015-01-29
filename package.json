@@ -1,9 +1,11 @@
 {
-  "name": "wbSSG",
-  "version": "0.0.0",
-  "private": true,
+  "name": "postcaptain",
+  "version": "0.0.4",
+  "engines": "0.10.35",
+  "author": "Russ DuBrock and Wendy Beck",
   "scripts": {
     "start": "node ./bin/www"
+
   },
   "dependencies": {
     "body-parser": "~1.10.2",
