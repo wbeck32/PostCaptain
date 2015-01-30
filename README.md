@@ -5,7 +5,7 @@ This is a project to learn how to create a self-contained node module that will 
 #Install
 
 Steps to install:
-1. Create a new directory where you will store your new website.
+1. Create a new directory where you will store your new website. /n
 2. In your new directory, create a new text file named 'package.json'
 3. Paste the following code into your newly created package.json file:
   {
