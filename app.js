@@ -10,8 +10,19 @@ var routes = require('./routes/index');
 
 var app = express();
 
+copy(
+    { src: __dirname+'/PostCaptain/public'
+    , dest: __dirname
+    , excludes: [/^\./]
+    }
+   , function () {
+    console.log('done!')
+})
+.on('log', function (ms, level){
+    console.log(level + ': ' + ms)
+})
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join('./public/', 'views'));
 app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
@@ -20,7 +31,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join('./', 'public')));
 
 app.use('/', routes);
 
