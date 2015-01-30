@@ -3,10 +3,33 @@
 This is a project to learn how to create a self-contained node module that will generate static sites.
 
 #Install
-```
-npm -g install postcaptain
-```
 
+Steps to install:
+1. Create a new directory where you will store your new website.
+2. In your new directory, create a new text file named 'package.json'
+3. Paste the following code into your newly created package.json file:
+  {
+    "name": "",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+  "scripts": {
+    "start": "`npm bin`/PostCaptain"
+    },
+  "repository": {
+     "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+     "builder": "git+https://github.com/rdubrock/PostCaptain.git"
+  },
+    "author": "",
+    "license": ""
+  }
+4. Run the command below
+```
+npm install postcaptain
+```
 
 #What's in the package?
 
@@ -49,3 +72,7 @@ You can add your own stylesheets and javascript files to the various directories
 To change the look of the main body of the page (anything besides the content between the &lt;head&gt; tags), edit postcaptain.html.
 
 To change the look of the posts, edit the repo.jade template.
+
+#Test your site!
+
+When you want to preview your content, just run 'npm start' in the console, and navigate to 'localhost:3030' in your browser. Hit refresh whenever you want to see changes you have made. 
