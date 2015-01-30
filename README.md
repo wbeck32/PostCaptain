@@ -5,9 +5,13 @@ This is a project to learn how to create a self-contained node module that will 
 #Install
 
 Steps to install:
-1. Create a new directory where you will store your new website. /n
+
+1. Create a new directory where you will store your new website. 
+
 2. In your new directory, create a new text file named 'package.json'
+
 3. Paste the following code into your newly created package.json file:
+```
   {
     "name": "",
     "version": "1.0.0",
@@ -26,6 +30,7 @@ Steps to install:
     "author": "",
     "license": ""
   }
+```
 4. Run the command below
 ```
 npm install postcaptain
