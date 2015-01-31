@@ -25,7 +25,7 @@ Steps to install:
     "url": ""
   },
   "dependencies": {
-     "builder": "git+https://github.com/rdubrock/PostCaptain.git"
+     "builder": "git+https://github.com/wbeck32/PostCaptain.git"
   },
     "author": "",
     "license": ""
@@ -35,6 +35,7 @@ Steps to install:
 ```
 npm install postcaptain
 ```
+The public directory will be copied into your new directory and you can edit the css, javascript, html and jade files from there as needed.
 
 #What's in the package?
 
